@@ -1,0 +1,15 @@
+# secrets 
+config.js
+.env
+.env.*
+
+
+# editor and OS junk 
+.vscode/
+.DS_Store
+Thumbs.db
+
+# dependencies and logs
+node_modules/
+*.log
+

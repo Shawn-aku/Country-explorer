@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Country Explorer</h1>
+            <p>Search, filter and sort every country in the world.</p>
+        </header>
+        <main>
+            <section>
+                <label>Search
+                    <input id="search" type="search" placeholder="Country or capital">
+                </label>
+
+                <label>Region
+                    <select id="region">
+                        <option value="all">All regions</option>
+                    </select>
+                </label>
+
+                <label>Sort by
+                    <select id="sort">
+                        <option value="name-asc">Name (A to Z)</option>
+                        <option value="name-desc">Name (Z to A)</option>
+                        <option value="pop-asc">Population (Low to High)</option>
+                        <option value="pop-desc">Population (High to Low)</option>
+                        <option value="area-asc">Area (small to large)</option>
+                        <option value="area-desc">Area (large to small)</option>
+
+                    </select>
+                </label>
+            </section>
+
+            <p id="status"></p>
+            <button id="retry" hidden>Try again</button>
+            <section id="grid"></section>
+        </main>
+        <footer>
+            Data from <a href="https://restcountries.com/" target="_blank">REST Countries</a>
+        </footer>
+        
+        <script src="config.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+    </html>
