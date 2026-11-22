@@ -30,18 +30,28 @@ function createCard(c) {
     const img = document.createElement("img");
     img.src = c.flag.url_svg;
     img.alt = c.flag.description || "Flag of " + c.names.common;
-
+    img.addEventListener("error", function() {
+      const placeholder = document.createElement("div");
+      placeholder.className = "no-flag";
+      placeholder.textContent = "No flag available";
+      img.replaceWith(placeholder);
+    });
     const name = document.createElement("h2");
         name.textContent = c.names.common;
+    
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.dataset.region = c.region;
+    badge.textContent= c.region;    
 
     const capital = c.capitals && c.capitals.length > 0 ? c.capitals[0].name : "None";
     const info = document.createElement("p");
-  info.textContent = "Capital: " + capital + " | Region: " + c.region;
+  info.textContent = "Capital: " + capital ;
 
     const pop = document.createElement("p");
   pop.textContent = "Population: " + (c.population || 0).toLocaleString();
 
-  card.append(img, name, info, pop);
+  card.append(img, badge, name, info, pop);
   return card;
 }
 
