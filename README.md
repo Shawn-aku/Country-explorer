@@ -4,7 +4,7 @@ A web app for travellers to look up, filter and sort every country in the world.
 
 ## Demo video
 
-Watch the 2-minute demo here: **PASTE_YOUR_VIDEO_LINK_HERE**
+Watch the 2-minute demo here: https://youtu.be/azvHhUxw__U?si=s-sbylvjvUQz44PQ
 
 ## Features
 
