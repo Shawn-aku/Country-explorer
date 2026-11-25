@@ -2,7 +2,7 @@ Country Explorer
 
 A web app for travellers to look up, filter and sort every country in the world. It loads live data from the REST Countries API and shows each country as a card with its flag, capital, region and population.
 
-Features
+Features :
 Search by country name or capital
 Filter by region and sort by name, population or area
 Coloured region badges and a live "Showing X of 254" counter
