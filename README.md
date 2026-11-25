@@ -24,6 +24,8 @@ API
 
 REST Countries v5: https://restcountries.com/docs/countries
 
+Watch the 2-minute demo here: 
+
 The key is sent in an Authorization: Bearer header. The API returns 100 countries per request, so the app loops through pages (offset 0, 100, 200) until meta.more is false, and asks only for the fields it needs with response_fields.
 
 Deployment and load balancer
